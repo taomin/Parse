@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "ChatViewController.h"
 #import <Parse/Parse.h>
 
 @interface LoginViewController ()
@@ -33,6 +34,11 @@
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             NSLog(@"taomin logged in");
+                                            ChatViewController *chatView = [ChatViewController new];
+                                            
+                                            [self presentViewController:chatView animated:YES completion:^{
+                                                NSLog(@"load chat view");
+                                            }];
                                             // Do stuff after successful login.
                                         } else {
                                             // The login failed. Check error to see why.

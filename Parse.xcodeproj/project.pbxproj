@@ -15,6 +15,8 @@
 		B7A0048B19D50CE00038979F /* ParseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A0048A19D50CE00038979F /* ParseTests.m */; };
 		B7A0049719D50EF40038979F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A0049519D50EF40038979F /* LoginViewController.m */; };
 		B7A0049819D50EF40038979F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7A0049619D50EF40038979F /* LoginViewController.xib */; };
+		B7A0049C19D5127C0038979F /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A0049A19D5127C0038979F /* ChatViewController.m */; };
+		B7A0049D19D5127C0038979F /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7A0049B19D5127C0038979F /* ChatViewController.xib */; };
 		C7E995944D224E029DE3CECC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7602999DE774D389C208ABD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,9 @@
 		B7A0049419D50EF40038979F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B7A0049519D50EF40038979F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B7A0049619D50EF40038979F /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B7A0049919D5127C0038979F /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		B7A0049A19D5127C0038979F /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		B7A0049B19D5127C0038979F /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,9 @@
 				B7A0049419D50EF40038979F /* LoginViewController.h */,
 				B7A0049519D50EF40038979F /* LoginViewController.m */,
 				B7A0049619D50EF40038979F /* LoginViewController.xib */,
+				B7A0049919D5127C0038979F /* ChatViewController.h */,
+				B7A0049A19D5127C0038979F /* ChatViewController.m */,
+				B7A0049B19D5127C0038979F /* ChatViewController.xib */,
 			);
 			path = Parse;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 			files = (
 				B7A0047D19D50CDF0038979F /* Main.storyboard in Resources */,
 				B7A0047F19D50CDF0038979F /* Images.xcassets in Resources */,
+				B7A0049D19D5127C0038979F /* ChatViewController.xib in Resources */,
 				B7A0049819D50EF40038979F /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +284,7 @@
 			files = (
 				B7A0049719D50EF40038979F /* LoginViewController.m in Sources */,
 				B7A0047A19D50CDF0038979F /* ViewController.m in Sources */,
+				B7A0049C19D5127C0038979F /* ChatViewController.m in Sources */,
 				B7A0047719D50CDF0038979F /* AppDelegate.m in Sources */,
 				B7A0047419D50CDF0038979F /* main.m in Sources */,
 			);
