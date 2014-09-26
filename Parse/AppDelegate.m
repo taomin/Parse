@@ -7,16 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
             
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//    Parse.setApplicationId("DXsvTSLgsKT03gSSqy6V5KbLwVpgfEjmEsKzzQUP", clientKey: "BXAzmCJhMtIVWhLVEiKIMzPCA5XI0Nt9NwvAOPVd");
+//    
+    [Parse setApplicationId:@"DXsvTSLgsKT03gSSqy6V5KbLwVpgfEjmEsKzzQUP" clientKey:@"BXAzmCJhMtIVWhLVEiKIMzPCA5XI0Nt9NwvAOPVd"];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    LoginViewController *vc = [LoginViewController new];
+//    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = vc;
+//    nvc.navigationBar.translucent = YES;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
